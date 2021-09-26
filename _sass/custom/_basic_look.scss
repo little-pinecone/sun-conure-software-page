@@ -1,0 +1,59 @@
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../variables";
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: $dark;
+  color: $light;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  height: 0.2rem;
+  width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: $divider-color;
+  opacity: 1;
+}
+
+header, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: map_get($spacers, 5) auto;
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  background: linear-gradient(135deg,
+          rgba(187, 19, 31, 1) 0%,
+          rgba(243, 175, 24, 1) 30%,
+          rgba(76, 145, 45, 1) 70%,
+          rgba(5, 130, 251, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: map_get($spacers, 2);
+  padding-bottom: map_get($spacers, 2);
+  font-size: $font-size-sm;
+  text-align: center;
+  color: $text-muted;
+}

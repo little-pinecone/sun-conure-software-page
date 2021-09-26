@@ -1,0 +1,33 @@
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../variables";
+
+$service-item-gutter: map_get($spacers, 3);
+
+.tiles {
+  margin: -$service-item-gutter;
+
+  .tile {
+    text-align: center;
+
+    padding: $service-item-gutter;
+
+    > * {
+      margin-bottom: map_get($spacers, 2);
+    }
+
+    i {
+      color: $primary;
+      font-size: $font-size-xl;
+    }
+
+    p {
+      color: $text-muted;
+      margin-bottom: 0;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
