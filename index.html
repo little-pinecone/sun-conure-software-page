@@ -71,7 +71,7 @@
             <div class="col-lg-3 col-md-6 tile">
                 <i class="bi bi-gem" aria-hidden="true"></i>
                 <h3>Software craftsmanship</h3>
-                <p>Creating high-impact and well-made products</p>
+                <p>Creating impactful and reliable products</p>
             </div>
             <div class="col-lg-3 col-md-6 tile">
                 <i class="bi bi-people" aria-hidden="true"></i>
@@ -86,16 +86,19 @@
             <div class="col-lg-3 col-md-6 tile">
                 <i class="bi bi-compass" aria-hidden="true"></i>
                 <h3>Responsive to change</h3>
-                <p>Ensuring sustainable development in a rapidly changing world</p>
+                <p>Ensuring sustainable development</p>
             </div>
         </div>
     </section>
 </div>
 
 <footer class="container">
-    Copyright &copy; 2021 - Sun Conure Software
+    Copyright &copy; <span id="year"></span> - Marta Szymek Sun Conure Software
 </footer>
 
 <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear().toString();
+</script>
 </body>
 </html>
