@@ -39,16 +39,6 @@ header, section {
   }
 }
 
-h1 {
-  background: linear-gradient(135deg,
-          rgba(187, 19, 31, 1) 0%,
-          rgba(243, 175, 24, 1) 30%,
-          rgba(76, 145, 45, 1) 70%,
-          rgba(5, 130, 251, 1) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 footer {
   margin-top: auto;
   padding-top: map_get($spacers, 2);
